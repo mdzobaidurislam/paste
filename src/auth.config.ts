@@ -79,6 +79,7 @@ export const authConfig = {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     session: async ({ session, token }: any) => {
       session.user = token.user
+      session.user.picture = token.picture as string | undefined;
       return session
     },
   },
