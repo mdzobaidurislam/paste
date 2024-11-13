@@ -225,3 +225,15 @@
   .premium_ad_toggle_title:after {
   top: 56px;
 }
+
+@media (max-width: 768px) {
+  .premium_ad_toggle_title {
+    font-size: 14px;
+}
+.premium_ad_ct_text {
+  font-size: 12px;
+}
+.premium_ad_ct_footer {
+  font-size: 12px;
+}
+}
