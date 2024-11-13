@@ -1,9 +1,13 @@
+export const config = {
+  runtime: "nodejs",
+};
+
 import { authConfig } from "./auth.config";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
-import connectToDatabase from "@/dbconfig/dbconfig";
+import connectToDatabase from "@/app/dbconfig/dbconfig";
 import User from "@/models/userModels";
 import jwt from "jsonwebtoken";
 

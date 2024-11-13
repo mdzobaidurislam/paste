@@ -1,6 +1,6 @@
 // Page.tsx
 import React from "react";
-import connectToDatabase from "@/dbconfig/dbconfig";
+import connectToDatabase from "@/app/dbconfig/dbconfig";
 import User from "@/models/userModels";
 import {
   Table,

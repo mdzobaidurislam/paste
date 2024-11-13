@@ -18,6 +18,7 @@ export async function middleware(req: NextRequest) {
     loginUrl.searchParams.set('callbackUrl', pathname);
   }
 
+  console.log(token)
   // If the user is logged in, redirect away from login page
   if (token && pathname === '/auth') {
     const redirectTo = redirectUrl || '/profile'; // Redirect to profile or specified callback URL

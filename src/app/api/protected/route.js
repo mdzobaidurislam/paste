@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
-import connectToDatabase from "@/dbconfig/dbconfig"; // Adjust the path as necessary
+import connectToDatabase from "@/app/dbconfig/dbconfig"; // Adjust the path as necessary
 import User from "@/models/userModels"; // Adjust the path as necessary
 
 // Connect to the database

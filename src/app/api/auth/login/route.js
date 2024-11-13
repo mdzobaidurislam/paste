@@ -1,4 +1,4 @@
-import connectToDatabase from "@/dbconfig/dbconfig";
+import connectToDatabase from "@/app/dbconfig/dbconfig";
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 import axios from "axios";

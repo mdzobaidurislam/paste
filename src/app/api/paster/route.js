@@ -1,4 +1,4 @@
-import connectToDatabase from "@/dbconfig/dbconfig";
+import connectToDatabase from "@/app/dbconfig/dbconfig";
 import Paster from "../../../models/pasterModel";
 import { NextRequest, NextResponse } from "next/server";
 

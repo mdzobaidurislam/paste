@@ -1,8 +1,8 @@
 
 import type { NextAuthConfig } from 'next-auth';
 import User from './models/userModels';
-import connectToDatabase from './dbconfig/dbconfig';
-import jwt from "jsonwebtoken";
+import jwtJ from "jsonwebtoken";
+import connectToDatabase from './app/dbconfig/dbconfig';
 export const authConfig = {
   pages: {
     signIn: '/auth',
@@ -54,7 +54,7 @@ export const authConfig = {
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     async jwt({ user, trigger, session, token }: any) {
-
+      const tokenSecret = process.env.TOKEN_SECRET || 'U29tZVN0cm9uZ1Rva2VuMTIzNDU2';
       if (user) {
         token.user = {
           ...user,
@@ -63,10 +63,10 @@ export const authConfig = {
           email: user?.email,
           isAdmin: user?.isAdmin,
           picture: user?.picture,
-          token: await jwt.sign({
+          token: await jwtJ.sign({
             _id: user._id,
             email: user.email,
-          }, process.env.TOKEN_SECRET, {
+          }, tokenSecret, {
             expiresIn: "1d",
           })
         }

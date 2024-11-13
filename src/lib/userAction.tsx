@@ -1,5 +1,5 @@
 import User from "@/models/userModels";
-import connectToDatabase from "@/dbconfig/dbconfig";
+import connectToDatabase from "@/app/dbconfig/dbconfig";
 
 export const getUsers = async ({
     page = 1,
