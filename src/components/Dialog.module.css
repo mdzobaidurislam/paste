@@ -1,0 +1,422 @@
+.dialog_back_btn, .dialog_close_btn {
+    font-size: var(--font-size-mini);
+    display: inline-flex;
+    vertical-align: top;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: normal;
+    transition-property: border,background-color,color,opacity;
+    transition-duration: var(--speed-highlightFadeOut);
+    user-select: none;
+    padding: 0 2px;
+    box-shadow: none;
+    position: relative;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: lch(91.447 4.784 282.863);
+    min-width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.dialog_head_wrapper {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 9px;
+    min-height: 40px;
+}
+.dialog_second_heading{
+    font-style: normal;
+    text-align: left;
+    color: lch(100 0 282.863);
+    line-height: normal;
+    font-size: var(--font-size-smallPlus);
+    font-weight: 500;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.dialog_body_wrapper {
+    padding: 20px;
+}
+.dialog_security_heading {
+    font-style: normal;
+    text-align: left;
+    color: #999aa1;
+    line-height: 1.5em;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transform: translateY(3px);
+}
+.dialog_divider {
+    height: 1px;
+    background-color: var(--border_primary);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.dialog_heading {
+    margin-bottom: 4px;
+    font-style: normal;
+    text-align: left;
+    color: lch(100 0 282.863);
+    line-height: normal;
+    font-size: var(--font-size-regular);
+    font-weight: 400;
+    margin-top: 24px;
+}
+.dialog_description {
+    margin-bottom: 24px;
+    font-size: var(--font-size-small);
+    color: #999aa1;
+}
+
+.dialog_box_wrapper {
+    border-radius: 6px;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid var(--border_primary);
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: var(--speed-highlightFadeIn);
+    max-height: 64px;
+    overflow: hidden;
+}
+.dialog_box_session_start_wrapper {
+    display: flex;
+    flex: initial;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.dialog_box_session_icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #222430;
+    display: grid;
+    place-items: center;
+}
+.dialog_box_session_start_heading {
+    font-style: normal;
+    text-align: left;
+    color: #e4e4ed;
+    line-height: normal;
+    font-size: var(--font-size-smallPlus);
+    font-weight: 500;
+}
+.dialog_box_session_start_description_wrapper {
+    margin-right: 4px;
+    font-style: normal;
+    text-align: left;
+    color: #999aa1;
+    line-height: normal;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.dialog_box_session_start_description_current_dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #26a544;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+.dialog_box_session_start_description_current {
+    font-style: normal;
+    text-align: left;
+    color: #26a544;
+    line-height: normal;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    flex-shrink: 0;
+}
+.dialog_box_session_dot {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.dialog_box_session_start_description_wrapper span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 160px;
+}
+.buttons_wrapper {
+    padding: 0 8px 0 12px;
+    height: 36px;
+    display: flex;
+    font-size: var(--font-size-small);
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: normal;
+    transition-property: border,background-color,color,opacity;
+    transition-duration: var(--speed-highlightFadeOut);
+    user-select: none;
+    position: relative;
+    border: 1px solid  var(--border_primary);
+    box-shadow: 0 4px 4px -1px lch(0 0 0/.04),0 1px 1px 0 lch(0 0 0/.08);
+    color: lch(91.247 4.784 282.863);
+    width: 100%;
+    justify-content: space-between;
+    color: lch(100 0 282.863);
+}
+.buttons_wrapper:hover {
+    background-color: rgba(255, 255, 255, 0.35); 
+    color: #fff; 
+}
+.buttons_start_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.buttons_wrapper .buttons_icon {
+    fill: #9c9da6;
+    transition-property: fill;
+    transition-duration: var(--speed-highlightFadeOut);
+}
+
+.dialog_progressive_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.dialog_progressive_heading {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: var(--font-size-regular);
+    text-transform: none;
+    color: #fff;
+    display: block;
+    line-height: normal;
+}
+.dialog_progressive_description {
+    font-style: normal;
+    text-align: left;
+    color: #999aa1;
+    line-height: normal;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+.dialog_waiting_time_heading {
+    font-style: normal;
+    text-align: left;
+    color: #fff;
+    line-height: normal;
+    font-size: var(--font-size-regular);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.dialog_waiting_time_description {
+    color: #999aa1;
+    font-size: var(--font-size-small);
+    margin-bottom: 20px;
+    margin-right: 16px;
+}
+.dialog_waiting_wrapper {
+    padding: 6px 12px;
+    border: 1px solid var(--border_primary);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    
+}
+.dialog_waiting_wrapper:hover{
+        background-color: rgba(255, 255, 255, 0.35); 
+        color: #fff; 
+    
+}
+.dialog_waiting_error {
+    font-style: normal;
+    color: #ff828c;
+    line-height: normal;
+    font-size: var(--font-size-micro);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    padding-left: 2px;
+    gap: 4px;
+}
+/* referal  */
+.dialog_body_item_heading {
+    margin-bottom: 16px;
+    font-size: var(--font-size-regular);
+    font-weight: 400;
+}
+.dialog_creation_wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+.dialog_input_container{
+    flex-grow: 1;
+}
+.dialog_creation_divider {
+    width: 1px;
+    background: var(--border_primary);
+    height: 30px;
+    margin: 0 8px;
+}
+.dialog_input {
+    height: 32px;
+    padding: 6px 12px;
+    border: 1px solid var(--border_primary);
+    border-radius: 5px;
+    font-size: .8125rem;
+    color: lch(100 0 282.863);
+    margin: 0;
+    appearance: none;
+    transition: border var(--speed-highlightFadeOut);
+    outline-offset: -1px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.dialog_create_btn {
+    display: inline-flex;
+    vertical-align: top;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: normal;
+    transition-property: border,background-color,color,opacity;
+    transition-duration: var(--speed-highlightFadeOut);
+    user-select: none;
+    position: relative;
+    border: 1px solid lch(47.887 64.446 291.567);
+    box-shadow: 0 4px 4px -1px lch(0 0 0/.04),0 1px 1px 0 lch(0 0 0/.08);
+    background-color: lch(42.887 62.446 291.567);
+    color: lch(100 5 291.567);
+    min-width: 32px;
+    height: 32px;
+    padding: 0 14px;
+    font-size: var(--font-size-small);
+    overflow: hidden;
+    width: 64px;
+}
+.dialog_create_btn:disabled {
+    opacity: .6;
+}
+/* copy  */
+
+.dialog_body_item_list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dialog_body_item_heading, .dialog_body_item_heading_small {
+    font-style: normal;
+    text-align: left;
+    color: lch(100 0 282.863);
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.dialog_copy_box, .dialog_copy_box button {
+    margin: 0;
+    border-radius: 5px;
+    line-height: normal;
+    font-weight: 500;
+    align-items: center;
+}
+.dialog_copy_box {
+    outline-offset: -1px;
+    font-size: var(--font-size-small);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    transition: all var(--speed-highlightFadeOut);
+    width: 100%;
+    height: 32px;
+    color: lch(100 0 282.863);
+    border: 1px solid var(--border_primary);
+    appearance: none;
+    font-style: normal;
+    text-align: left;
+    color: lch(63.788 4.284 282.863);
+    font-size: var(--font-size-smallPlus);
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 4px 6px 12px;
+    gap: 10px;
+}
+.dialog_dialog_copy_box, .dialog_dialog_copy_box button {
+    margin: 0;
+    border-radius: 5px;
+    line-height: normal;
+    font-weight: 500;
+    align-items: center;
+}
+.dialog_copy_box span {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: all!important;
+    display: flex;
+}
+.dialog_copy_box button {
+    display: inline-flex;
+    vertical-align: top;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition-property: border,background-color,color,opacity;
+    transition-duration: var(--speed-highlightFadeOut);
+    user-select: none;
+    position: relative;
+    border: 1px solid var(--border_primary);
+    box-shadow: 0 4px 4px -1px lch(0 0 0/.04),0 1px 1px 0 lch(0 0 0/.08);
+    background-color: var(--bg_primary);
+    color: lch(90.947 4.284 282.863);
+    min-width: 24px;
+    height: 24px;
+    padding: 0 8px;
+    font-size: var(--font-size-mini);
+}
+.dialog_copy_box svg {
+    margin-right: 6px;
+}
