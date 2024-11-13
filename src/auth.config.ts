@@ -14,7 +14,7 @@ export const authConfig = {
       try {
         await connectToDatabase();
         let dbUser = await User.findOne({ email: profile?.email || user?.email });
-        user.picture = profile?.picture
+        user.picture = profile?.picture || ""
         if (!dbUser) {
           dbUser = await User.create({
             email: profile?.email,

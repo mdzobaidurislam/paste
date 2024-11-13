@@ -22,6 +22,6 @@
       "@/components/*": ["./src/components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/admin/_components/sigin-view.jsx", "src/app/admin/dashboard/user/_components/UserDeleteButton.jsx", "src/auth.js", "src/app/admin/dashboard/user/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/admin/_components/sigin-view.jsx", "src/app/admin/dashboard/user/_components/UserDeleteButton.jsx", "src/auth.js", "src/app/admin/dashboard/user/page.jsx", "src/auth.config.js"],
   "exclude": ["node_modules"]
 }
