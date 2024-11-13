@@ -12,6 +12,7 @@ export interface NavItem {
   items?: NavItem[];
 }
 
+
 export interface NavItemWithChildren extends NavItem {
   items: NavItemWithChildren[];
 }
