@@ -62,15 +62,12 @@ const PasterDetail = async ({ params }: { params: { id: string } }) => {
     return (
         <div>
             <Header />
-
             <div className="flex">
                 {/* {email && <SideBarCom />} */}
                 <main className="container  max-w-7xl mx-auto px-4 lg:px-16 ">
                     <PremiumAccessScreen paster={paster} />
                 </main >
-
             </div >
-
         </div >
     );
 };
